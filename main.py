@@ -9,6 +9,8 @@ web_site = Flask(__name__)
 def index():
 	return render_template('index.html')
 
+# hello
+
 @web_site.route('/user/', defaults={'username': None})
 @web_site.route('/user/<username>')
 def generate_user(username):
